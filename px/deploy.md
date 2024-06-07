@@ -1,11 +1,18 @@
-#
+# couple git related
 git reset --hard HEAD  (discard local changes not commited)
 git reset --hard origin/main   (discard local changes even commited locally, not to remote yet)
 
-##
+git rm -r --cached .env
+
+git add .
+git commit -m 'your message'
+git push
+
 ##
 https://github.com/petermyqops/copilot-metrics-viewer
 
+npm install
+npm run serve
 
 ## copy & paste ACCESS KEY ID and SECRET ACCESS KEY
 cd /Users/pxu/CODE/Copliot/JS/copilot-metrics-viewer
@@ -14,6 +21,7 @@ log in to TEND AWS Cloud, ECS Cluster (devCluster-fargate)
 
 
 ##
+
 docker build -t copilot-metrics-viewer .
 docker run -p 8080:80 copilot-metrics-viewer
 
